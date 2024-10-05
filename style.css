@@ -1,0 +1,179 @@
+/* Base style for the body */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+/* Header styles */
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed; /*Fixed positon even though we scroll */
+    top: 0; 
+    left: 0;
+    background-color:#ffffff; 
+    padding: 10px 20px;
+     z-index: 1000; /*Ensure header is on top */
+}
+
+/* Logo style */
+header .logo {
+    display: inline-flex; 
+    align-items: center; 
+    text-decoration: none; /* Remove underline from the links */
+    color: #253892;
+}
+
+/* Logo image style */
+header .logo img {
+    height: 40px; 
+    margin-right: 10px; 
+}
+
+/* Logo text styles */
+header .logo span {
+    font-size: 25px; 
+    font-weight: bold;
+    margin-top: 23px;
+}
+
+/* Account icon styles */
+header .account {
+    position: relative;
+    color: #253892; 
+    font-size: 30px; 
+    text-decoration: none; 
+    margin-right: 50px;
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+/* Dropdown menu styles */
+.dropdown-content {
+    display: none; /* Hide dropdown by default */
+    position: absolute;
+    right: 0; 
+    background-color: #ffffff; 
+    min-width: 250px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    border-radius: 10px; 
+}
+
+/* Styles for dropdown links */
+.dropdown-content a {
+    color: #253892; 
+    padding: 15px 15px; 
+    text-decoration: none; 
+    font-size: 18px;
+    display: flex; 
+    align-items: center;
+    position: relative;
+    transition: background-color 0.3s; 
+}
+
+/* Icon styles in dropdown links */
+.dropdown-content a i {
+    margin-right: 10px;
+    font-size: 20px;
+    display: inline-flex;
+    width: 25px;
+    text-align: center;
+}
+
+/* This is a line between 2 links*/
+.dropdown-content a::after {
+    content: '';
+    position: absolute;
+    left: 15px; 
+    right: 15px; 
+    bottom: 0; 
+    height: 2px; 
+    background-color: #a8a8a844; 
+    transition: background-color 0.3s;
+}
+
+/* Remove a line after logout link */
+.dropdown-content a.logout::after {
+    display: none; 
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1; 
+}
+
+.account:hover .dropdown-content {
+    display: block; 
+}
+
+/* Menu icon styles */
+header .menu-icon {
+    font-size: 30px;
+    color: #253892;
+    padding: 10px;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+}
+
+/* Navbar styles */
+.navbar {
+    height: 100vh;
+    width: 250px; 
+    background-color: #253892;
+    position: fixed;
+    top: 0;
+    left: -250px; /* Hidden to the left*/
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px;
+    transition: 0.3s; /* Transition for showing/hiding */
+}
+
+.navbar.show {
+    left: 0; 
+}
+
+.navbar a {
+    padding: 15px 10px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #808080;
+}
+
+.navbar a i {
+    margin-right: 10px;
+    font-size: 20px;
+    display: inline-flex;
+    width: 30px;
+    text-align: center;
+}
+
+.content {
+    margin-left: 0px;
+    text-align: center;
+    padding: 20px;
+    margin-top: 70px;
+    transition: margin-left 0.3s;
+}
+
+.content.shift-right {
+    margin-left: 250px;
+}
+
+#content-title {
+    font-size: 24px;
+}
+
+#content-description {
+    font-size: 18px;
+    color: #666;
+}
