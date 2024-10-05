@@ -139,7 +139,7 @@ header .menu-icon {
     padding: 20px 50px;
     text-decoration: none;
     font-size: 18px;
-    color: #AAB0C6;   /*#253892 */
+    color: #AAB0C6;  
     display: flex;
     align-items: center;
     border-radius: 25px;
@@ -170,7 +170,6 @@ header .menu-icon {
 }
 
 .content {
-    margin-left: 0px;
     text-align: center;
     padding: 20px;
     margin-top: 70px;
@@ -194,4 +193,63 @@ header .menu-icon {
     color: #666;
 }
 
+/* Media Queries for Responsive Design */
+@media screen and (max-width: 1500px) {
+    /* Header styles */
+    header {
+        padding: 10px;
+    }
 
+    /* Logo text styles */
+    header .logo span {
+        font-size: 20px; 
+    }
+
+    header .logo img {
+        font-size: 20px;
+    }
+    /* Account icon styles */
+    header .account {
+        font-size: 25px; 
+        margin-right: 20px; 
+    }
+
+    header .menu-icon {
+        font-size: 25px;
+    }
+    /* Navbar styles */
+    .navbar {
+        height: 89vh;
+        width: 250px; 
+        left: -250px;
+    }
+
+    .navbar a {
+        font-size: 15px;
+        padding: 15px 30px;
+    }
+    .navbar a i {
+        font-size: 15px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .content {
+        margin-left: 0; 
+        padding: 20px; 
+        height: 83vh;
+    }
+
+    .content.shift-right {
+        margin-left: 250px;
+        border-radius: 35px;
+    }
+
+    #content-title {
+        font-size: 20px; 
+    }
+
+    #content-description {
+        font-size: 16px; 
+    }
+}
