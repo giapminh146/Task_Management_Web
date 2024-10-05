@@ -118,15 +118,16 @@ header .menu-icon {
 
 /* Navbar styles */
 .navbar {
-    height: 100vh;
-    width: 250px; 
-    background-color: #253892;
+    height: 94vh;
+    width: 280px; 
+    background-color: #ffffff;
     position: fixed;
-    top: 0;
-    left: -250px; /* Hidden to the left*/
+    left: -280px; /* Hidden to the left*/
     display: flex;
     flex-direction: column;
-    padding-top: 70px;
+    justify-content: center;
+    border-radius: 35px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     transition: 0.3s; /* Transition for showing/hiding */
 }
 
@@ -135,10 +136,10 @@ header .menu-icon {
 }
 
 .navbar a {
-    padding: 15px 10px;
+    padding: 20px 50px;
     text-decoration: none;
     font-size: 18px;
-    color: white;
+    color: #AAB0C6;   /*#253892 */
     display: flex;
     align-items: center;
     border-radius: 25px;
@@ -146,15 +147,26 @@ header .menu-icon {
 }
 
 .navbar a:hover {
-    background-color: #808080;
+    background-color: #F5F7FB; 
+    color: #253892;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
+/* Navbar icon */
 .navbar a i {
     margin-right: 10px;
+    width: 40px;
+    height: 40px;
     font-size: 20px;
     display: inline-flex;
-    width: 30px;
-    text-align: center;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar a:hover i {
+    color: #ffffff; 
+    background-color: #253892;
 }
 
 .content {
@@ -163,10 +175,14 @@ header .menu-icon {
     padding: 20px;
     margin-top: 70px;
     transition: margin-left 0.3s;
+    background-color: #e6f1f8;
+    border-radius: 35px;
+    height: 90vh;
 }
 
 .content.shift-right {
-    margin-left: 250px;
+    margin-left: 280px;
+    border-radius: 35px;
 }
 
 #content-title {
@@ -177,3 +193,5 @@ header .menu-icon {
     font-size: 18px;
     color: #666;
 }
+
+

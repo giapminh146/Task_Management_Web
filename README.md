@@ -18,4 +18,4 @@ Student Info
     - Nguyễn Đăng Nguyên 22BI13340
     - Giáp Đỗ Anh Minh 22BI13282
 * Group ID: 6
-* Project Name:  bTask Management App
+* Project Name:  Task Management App

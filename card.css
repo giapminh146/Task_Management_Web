@@ -1,0 +1,100 @@
+.task-card {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  gap: 1rem;
+  background-color: white;
+  width: 288px; 
+  max-height: 23rem; 
+  box-shadow: 0 2px 35px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e5e5e5;
+  overflow: hidden;
+}
+
+.task-status {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  background-clip: border-box;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  text-align: left;
+}
+
+.priority-container {
+  display: flex; 
+  align-items: center; 
+}
+
+.task-priority {
+  font-family: 'Anton', sans-serif;
+  font-size: 1rem;
+}
+
+.priority-icon {
+  margin-right: 0.5rem; 
+  font-size: 1rem;
+}
+
+.task-title {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+}
+
+.task-description {
+  padding: 5px;
+  text-align: center;
+  max-height: 288px; 
+  overflow: hidden; 
+  text-overflow: ellipsis; 
+}
+
+.task-dates {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+}
+
+.task-date {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.date {
+  font-weight: 300; 
+}
+
+.task-footer {
+  padding: 0.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.status-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 0.75rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.status-button.completed {
+  background-color: #c6f6d5; 
+  color: #2f855a;
+}
