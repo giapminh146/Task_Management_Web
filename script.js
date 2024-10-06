@@ -20,16 +20,10 @@ document.querySelectorAll('.navbar a').forEach(item => {
                     title.innerText = 'Pending Tasks';
                     description.innerText = 'These tasks are pending and awaiting action.';
                     break;
-                    case 'in-progress':
-                        fetch('card.html') //connect to inProgress.html
-                            .then(response => response.text())
-                            .then(data => {
-                                // Just only change in content
-                                const contentDiv = document.querySelector('.content');
-                                contentDiv.querySelector('.content-inner').innerHTML = data; 
-                            })
-                            .catch(error => console.error('Error fetching the progress content:', error));
-                        break;
+                case 'in-progress':
+                    title.innerText = 'Dashboard';
+                    description.innerText = 'These tasks are in progress.';
+                    break;
                     
                 case 'deployed':
                     title.innerText = 'Deployed Tasks';
